@@ -1,5 +1,5 @@
 import math
-from get_curr_new import *
+from get_curr import *
 
 def create_distance_table(curr):
 
@@ -129,5 +129,5 @@ class weighted_graph:
 
 
 
-test = weighted_graph(['USD', 'CAD', 'GBP'])#, 'JPY', 'AUD'])
-arb = test.show_arbitrage_opportunities()
+#test = weighted_graph(['USD', 'CAD', 'GBP'])#, 'JPY', 'AUD'])
+#arb = test.show_arbitrage_opportunities()
