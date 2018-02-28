@@ -4,8 +4,8 @@ import itertools
 import pandas as pd
 import numpy as np
 import math
-from API_KEYS import *
-from config import *
+from graph.API_KEYS import *
+from graph.config import *
 
 
 def get_curr_combos(combos):

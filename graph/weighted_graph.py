@@ -1,5 +1,5 @@
 import math
-from get_curr import *
+from graph.get_curr import *
 
 def create_distance_table(curr):
 

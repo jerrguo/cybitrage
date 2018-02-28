@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, jsonify
-from currs.weighted_graph import weighted_graph
+from graph.weighted_graph import weighted_graph
 import json
 
 
