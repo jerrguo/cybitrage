@@ -23,7 +23,7 @@ def currencies():
             if currency in support_currs:
                 curr_list.append(currency)
 
-        curr_list = list(set(curr_list))
+        curr_list = list(set(curr_list))                            # Remove duplicate currencies from list
         currencies = ', '.join(curr_list)                           # Recompile string of currencies excluding erroneous values
 
         print('THIS: ' + currencies)
