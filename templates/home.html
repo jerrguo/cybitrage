@@ -9,7 +9,7 @@
 
             <title>Cybitrage</title>
             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="styles/style.css">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
       </head>
       <body>
             <div class="container">
@@ -22,9 +22,21 @@
                         identified and displayed.
                   </p>
                   <p id="description">
-                        Using the "INSERT METHOD" below, choose which currencies to use and Cybitrage will identify
+                        Insert which currencies to use by typing their acronyms in a comma-separated list. Cybitrage will identify
                         if any arbitrage opportunities exist between them.
                   </p>
+                  <p id="description">
+                        Cybitrage currently supports {{support_currs_string}}.
+                  </p>
+                  <br><br><br>
+                  <form action="" method="post">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="form-content">
+                              <input type="text" name="currs" class="form-control" placeholder="Enter currencies" value="{{currencies}}">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="form-content">
+                              <button type="submit" class="btn btn-primary">Find Arbitrage Opportunities</button>
+                        </div>
+                  </form>
             </div>
       </body>
 </html>
