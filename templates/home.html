@@ -26,17 +26,19 @@
                         if any arbitrage opportunities exist between them.
                   </p>
                   <p id="description">
-                        Cybitrage currently supports {{support_currs_string}}.
+                        Cybitrage currently supports {{support_currs}}.
                   </p>
                   <br><br><br>
                   <form action="" method="post">
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="form-content">
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8" id="form-content">
                               <input type="text" name="currs" class="form-control" placeholder="Enter currencies" value="{{currencies}}">
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="form-content">
                               <button type="submit" class="btn btn-primary">Find Arbitrage Opportunities</button>
                         </div>
                   </form>
+                  <br><br><br><br><br>
+                  <p id="description">Arbitrage Opportunity: {{opportunity}}</p>
             </div>
       </body>
 </html>
