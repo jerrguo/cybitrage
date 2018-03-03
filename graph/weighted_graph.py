@@ -20,6 +20,8 @@ def show_negative_weight_cycle(predecessors, node):
     arbitrage = [node]                                      # temp list used to display currencies with arbitrage opportunities
     next_node = predecessors[node]
 
+    print('PRED: ' + str(predecessors))
+
     while next_node not in arbitrage:
         arbitrage.append(next_node)
         next_node = predecessors[next_node]

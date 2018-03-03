@@ -27,6 +27,13 @@ def currencies():
         currencies = ', '.join(curr_list)                           # Recompile string of currencies excluding erroneous values
 
         print('THIS: ' + currencies)
+
+        # Arbitrage Detection Algorithm
+        curr_list = ['USD', 'CAD', 'GBP', 'AUD']                           # TODO TESTING
+        if len(curr_list) > 1:
+            graph = weighted_graph(curr_list)
+            opportunities = graph.show_arbitrage_opportunities()    # Opportunities stores the arbitrage cycles in list form
+
     else:
         currencies = ""
 
