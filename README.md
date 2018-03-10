@@ -7,5 +7,5 @@ Currency arbitrage detector pulling data through 1forge.com and using the Bellma
 * Responsive web design
 
 ### Built With
-Python/Flask, HTML, CSS, Bootstrap
+Python, Flask, HTML, CSS, Bootstrap
 
