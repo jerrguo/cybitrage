@@ -1,4 +1,4 @@
-# Cybitrage
+# Currency Arbitrage Finder
 Currency arbitrage detector pulling data through 1forge.com and using the Bellman-Ford algorithm.
 
 ### Features
